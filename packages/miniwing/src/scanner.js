@@ -18,7 +18,7 @@ const CLASS_ATTR_REGEX = /class=["']([^"']+)["']/g;
  * Regular expression to match utility class patterns
  * Matches patterns like: bg-blue, bg-red, p-1, p-2, m-1, etc.
  */
-const UTILITY_CLASS_REGEX = /^(bg-|text-|p-|m-|pt-|pb-|pl-|pr-|mt-|mb-|ml-|mr-|w-|h-|flex-|grid-|block-|inline-|hidden|visible|overflow-|cursor-|font-|leading-|tracking-|rounded-|shadow-|opacity-|z-|top-|left-|right-|bottom-|position-|border-|whitespace-|select-|pointer-|animate-|transition-|duration-|ease-|delay-|scale-|rotate-|translate-|skew-|transform-|origin-|backdrop-|ring-|outline-|caret-|fill-|stroke-|aspect-|grow-|shrink-|flex-|order-|self-|justify-|content-|items-|leading-|tracking-|whitespace-|break-|container-|columns-|gap-|space-|divide-|ring-|space-|accent-|scroll-|snap-|will-|content-|invalid-|peer-|placeholder-|[a-z]+-[0-9]+|[a-z]+-[a-z0-9-]+)/;
+const UTILITY_CLASS_REGEX = /^(bg-|text-|p-|m-|pt-|pb-|pl-|pr-|mt-|mb-|ml-|mr-|mx-|my-|px-|py-|w-|h-|flex-|grid-|block-|inline-|hidden|visible|overflow-|cursor-|font-|leading-|tracking-|rounded-|shadow-|opacity-|z-|top-|left-|right-|bottom-|position-|border-|whitespace-|select-|pointer-|animate-|transition-|duration-|ease-|delay-|scale-|rotate-|translate-|skew-|transform-|origin-|backdrop-|ring-|outline-|caret-|fill-|stroke-|aspect-|grow-|shrink-|flex-|order-|self-|justify-|content-|items-|leading-|tracking-|whitespace-|break-|container-|columns-|gap-|space-|divide-|ring-|space-|accent-|scroll-|snap-|will-|content-|invalid-|peer-|placeholder-|[a-z]+-[0-9]+|[a-z]+-[a-z0-9-]+)/;
 
 /**
  * Scans an array of HTML file paths and extracts all unique class names

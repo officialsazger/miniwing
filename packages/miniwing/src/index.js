@@ -7,11 +7,14 @@
 
 const scanner = require('./scanner');
 const generator = require('./generator');
+const tokenLoader = require('./token-loader');
 
 module.exports = {
   scanner,
   generator,
+  tokenLoader,
   // Re-export commonly used functions
   scanHTMLFiles: scanner.scanHTMLFiles,
-  generateCSS: generator.generateCSS
+  generateCSS: generator.generateCSS,
+  loadAndMergeTokens: tokenLoader.loadAndMergeTokens
 };

@@ -1,8 +1,9 @@
 /**
  * Miniwing Configuration File
- * 
+ *
  * This file contains the configuration for miniwing CSS utility generator.
  * You can customize the colors, spacing, and other utility settings here.
+ * These values will override the defaults from tokens.json.
  */
 
 module.exports = {
@@ -15,25 +16,36 @@ module.exports = {
     // Whether to include comments in output
     comments: true
   },
-  
+
   // HTML files to scan for class names
+  // Note: This is overridden by CLI to scan specific files
   scan: [
     './apps/docs/index.html',
     './playground/index.html'
   ],
-  
-  // Custom colors to include (in addition to defaults)
-  colors: {
-    // Add custom colors here
-    // Example: 'brand': '#ff5500'
+
+  // Custom colors to override/add (in addition to tokens.json defaults)
+  // Example: 'brand': '#ff5500'
+  colors: {},
+
+  // Custom spacing values to override/add
+  // Example: '128': '32rem'
+  spacing: {},
+
+  // Custom typography values to override/add
+  typography: {
+    fontSize: {},
+    fontWeight: {},
+    lineHeight: {},
+    letterSpacing: {}
   },
-  
-  // Custom spacing values (in addition to defaults)
-  spacing: {
-    // Add custom spacing here
-    // Example: '128': '32rem'
-  },
-  
+
+  // Custom shadows to override/add
+  shadows: {},
+
+  // Custom border radius values to override/add
+  borderRadius: {},
+
   // Enable/disable specific utility categories
   utilities: {
     backgroundColors: true,

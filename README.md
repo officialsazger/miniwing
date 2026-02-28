@@ -57,11 +57,17 @@ miniwing build complete
 
 ## Configuration
 
-Edit `packages/miniwing/miniwind.config.js` to customize:
+Edit `packages/miniwing/miniwing.config.js` to customize:
 - Colors
 - Spacing values
 - Output path
 - Which utilities to generate
+
+## Netlify Deployment
+
+This repo is configured for Netlify via `netlify.toml`:
+- Build command: `npm run build`
+- Publish directory: `apps/docs`
 
 ## Project Structure
 
