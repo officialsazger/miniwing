@@ -2,7 +2,7 @@
   "name": "miniwing",
   "version": "1.0.0",
   "description": "A lightweight CSS utility generator that scans HTML files for class names",
-  "private": false,
+  "private": true,
   "workspaces": [
     "packages/*",
     "apps/*"
@@ -14,5 +14,17 @@
   },
   "keywords": ["css", "utility", "generator", "miniwing"],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sager93134-droid/miniwind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sager93134-droid/miniwind/issues"
+  },
+  "homepage": "https://github.com/sager93134-droid/miniwind#readme",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sager93134-droid"
+  }
 }
