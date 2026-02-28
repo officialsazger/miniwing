@@ -45,6 +45,10 @@ function main() {
   // Define the HTML files to scan
   const htmlFiles = [
     path.join(rootDir, 'apps/docs/index.html'),
+    path.join(rootDir, 'apps/docs/getting-started/index.html'),
+    path.join(rootDir, 'apps/docs/core-concepts/index.html'),
+    path.join(rootDir, 'apps/docs/cli/index.html'),
+    path.join(rootDir, 'apps/docs/examples/index.html'),
     path.join(rootDir, 'playground/index.html')
   ];
   
@@ -70,10 +74,10 @@ function main() {
   fs.writeFileSync(outputPath, css, 'utf8');
   console.log(`CSS compiled to: ${outputPath}`);
   
-  // Copy to apps/docs/style.css
-  const docsStylePath = path.join(rootDir, 'apps/docs/style.css');
+  // Copy generated utilities for docs demos without overriding the docs theme stylesheet
+  const docsStylePath = path.join(rootDir, 'apps/docs/miniwing.css');
   fs.writeFileSync(docsStylePath, css, 'utf8');
-  console.log(`CSS copied to: ${docsStylePath}`);
+  console.log(`Generated docs utility CSS at: ${docsStylePath}`);
   
   console.log('\n' + '='.repeat(40));
   console.log('miniwing build complete!');

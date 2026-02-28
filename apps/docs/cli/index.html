@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CLI Reference | Miniwing Docs</title>
+  <meta name="description" content="CLI commands and behavior for miniwing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/miniwing.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <a class="brand" href="/"><span class="brand-badge">M</span>miniwing docs</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Overview</a>
+        <a href="/getting-started/">Getting Started</a>
+        <a href="/core-concepts/">Core Concepts</a>
+        <a href="/cli/" class="active">CLI</a>
+        <a href="/examples/">Examples</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>CLI Reference</h1>
+      <p>Command behavior for local development, CI builds, and quick one-off generation.</p>
+    </section>
+
+    <div class="grid">
+      <article class="card span-6">
+        <h2>Main Command</h2>
+        <pre><code>npx miniwing
+# or
+npm run build</code></pre>
+        <p>Runs the CLI pipeline: load tokens, scan classes, generate CSS output.</p>
+      </article>
+
+      <article class="card span-6">
+        <h2>Expected Output</h2>
+        <pre><code>packages/miniwing/dist/output.css</code></pre>
+        <p>Use this output in docs/app pages via a stylesheet link.</p>
+      </article>
+
+      <article class="card span-12">
+        <h2>Troubleshooting</h2>
+        <ul class="list">
+          <li>No CSS update: verify scanner input paths point to your HTML files.</li>
+          <li>Missing utilities: check token keys and utility naming match.</li>
+          <li>Wrong output location: inspect CLI path resolution and config values.</li>
+        </ul>
+      </article>
+    </div>
+
+    <footer class="footer">Miniwing docs on Netlify</footer>
+  </div>
+</body>
+</html>

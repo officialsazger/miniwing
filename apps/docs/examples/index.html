@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Examples | Miniwing Docs</title>
+  <meta name="description" content="Practical UI snippets built with miniwing utility classes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/miniwing.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <a class="brand" href="/"><span class="brand-badge">M</span>miniwing docs</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Overview</a>
+        <a href="/getting-started/">Getting Started</a>
+        <a href="/core-concepts/">Core Concepts</a>
+        <a href="/cli/">CLI</a>
+        <a href="/examples/" class="active">Examples</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Examples</h1>
+      <p>Reusable snippets to test your generated utilities and token scales quickly.</p>
+    </section>
+
+    <div class="grid">
+      <article class="card span-6">
+        <h2>Primary Button</h2>
+        <pre><code>&lt;button class="bg-blue text-white px-4 py-2 rounded-lg"&gt;
+  Deploy
+&lt;/button&gt;</code></pre>
+      </article>
+
+      <article class="card span-6">
+        <h2>Info Panel</h2>
+        <pre><code>&lt;div class="bg-gray-100 p-6 rounded-xl shadow"&gt;
+  &lt;h3 class="text-xl font-bold"&gt;Build Complete&lt;/h3&gt;
+  &lt;p class="text-gray-700"&gt;All classes generated.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+      </article>
+
+      <article class="card span-12">
+        <h2>Simple Pricing Block</h2>
+        <pre><code>&lt;section class="bg-white p-8 rounded-2xl shadow-lg"&gt;
+  &lt;h2 class="text-2xl font-bold"&gt;Starter&lt;/h2&gt;
+  &lt;p class="text-4xl font-bold"&gt;$9&lt;/p&gt;
+  &lt;ul class="space-y-2"&gt;
+    &lt;li&gt;Token-based utilities&lt;/li&gt;
+    &lt;li&gt;Fast static CSS output&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;</code></pre>
+      </article>
+    </div>
+
+    <footer class="footer">Miniwing docs on Netlify</footer>
+  </div>
+</body>
+</html>

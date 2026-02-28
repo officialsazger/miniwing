@@ -2,311 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Miniwing Docs</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Miniwing documentation: install, configure, and generate token-driven utility CSS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/miniwing.css">
 </head>
-<body class="bg-gray-100 p-4">
-  <div class="container mx-auto">
-    <h1 class="text-3xl font-bold text-center mb-8">Miniwing CSS Utilities</h1>
-    
-    <!-- Background Color Examples -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Background Colors</h2>
-      <div class="flex gap-4 flex-wrap">
-        <div class="bg-blue p-4 rounded">bg-blue</div>
-        <div class="bg-red p-4 rounded">bg-red</div>
-        <div class="bg-green p-4 rounded">bg-green</div>
-        <div class="bg-yellow p-4 rounded">bg-yellow</div>
-        <div class="bg-purple p-4 rounded">bg-purple</div>
-        <div class="bg-pink p-4 rounded">bg-pink</div>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-badge">M</span>
+        miniwing docs
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/" class="active">Overview</a>
+        <a href="/getting-started/">Getting Started</a>
+        <a href="/core-concepts/">Core Concepts</a>
+        <a href="/cli/">CLI</a>
+        <a href="/examples/">Examples</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Token-driven utility CSS, generated for your project.</h1>
+      <p>Miniwing scans your HTML, resolves classes from tokens, and emits a compact CSS output. No runtime, no heavy framework layer.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="/getting-started/">Start In 2 Minutes</a>
+        <a class="btn ghost" href="/examples/">View Real Examples</a>
       </div>
     </section>
-    
-    <!-- Spacing Examples -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Spacing</h2>
-      <div class="flex gap-4 flex-wrap">
-        <div class="bg-gray-200 p-1">p-1</div>
-        <div class="bg-gray-200 p-2">p-2</div>
-        <div class="bg-gray-200 p-4">p-4</div>
-        <div class="bg-gray-200 p-6">p-6</div>
-        <div class="bg-gray-200 p-8">p-8</div>
-      </div>
-    </section>
-    
-    <!-- Text Colors -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Text Colors</h2>
-      <div class="flex gap-4 flex-wrap">
-        <p class="text-blue">text-blue</p>
-        <p class="text-red">text-red</p>
-        <p class="text-green">text-green</p>
-        <p class="text-white bg-black p-2">text-white</p>
-      </div>
-    </section>
-    
-    <!-- Padding Variants -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Padding Variants</h2>
-      <div class="flex gap-4 flex-wrap">
-        <div class="bg-gray-300 pt-4">pt-4</div>
-        <div class="bg-gray-300 pb-4">pb-4</div>
-        <div class="bg-gray-300 pl-4">pl-4</div>
-        <div class="bg-gray-300 pr-4">pr-4</div>
-      </div>
-    </section>
-    
-    <!-- Margin -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Margin</h2>
-      <div class="flex gap-4 flex-wrap">
-        <div class="bg-gray-300 m-1 p-2">m-1</div>
-        <div class="bg-gray-300 m-2 p-2">m-2</div>
-        <div class="bg-gray-300 m-4 p-2">m-4</div>
-      </div>
-    </section>
-    
-    <!-- Typography -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Typography</h2>
-      <div class="space-y-2">
-        <p class="text-xs">text-xs</p>
-        <p class="text-sm">text-sm</p>
-        <p class="text-base">text-base</p>
-        <p class="text-lg">text-lg</p>
-        <p class="text-xl">text-xl</p>
-        <p class="text-2xl">text-2xl</p>
-        <p class="text-3xl font-bold">text-3xl</p>
-      </div>
-    </section>
-    
-    <!-- Font Weights -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Font Weights</h2>
-      <div class="flex gap-4 flex-wrap">
-        <span class="font-thin">font-thin</span>
-        <span class="font-light">font-light</span>
-        <span class="font-normal">font-normal</span>
-        <span class="font-medium">font-medium</span>
-        <span class="font-semibold">font-semibold</span>
-        <span class="font-bold">font-bold</span>
-      </div>
-    </section>
-    
-    <!-- Border Radius -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Border Radius</h2>
-      <div class="flex gap-4 flex-wrap">
-        <div class="bg-blue p-4 rounded-sm">rounded-sm</div>
-        <div class="bg-blue p-4 rounded">rounded</div>
-        <div class="bg-blue p-4 rounded-md">rounded-md</div>
-        <div class="bg-blue p-4 rounded-lg">rounded-lg</div>
-        <div class="bg-blue p-4 rounded-xl">rounded-xl</div>
-        <div class="bg-blue p-4 rounded-full">rounded-full</div>
-      </div>
-    </section>
-    
-    <!-- Flexbox -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Flexbox</h2>
-      <div class="flex gap-4 mb-4">
-        <div class="bg-gray-300 p-2">flex-row</div>
-        <div class="bg-gray-300 p-2">item 2</div>
-      </div>
-      <div class="flex-col flex gap-4 mb-4">
-        <div class="bg-gray-300 p-2">flex-col</div>
-        <div class="bg-gray-300 p-2">item 2</div>
-      </div>
-      <div class="flex items-center gap-4">
-        <div class="bg-gray-300 p-2">items-center</div>
-        <div class="bg-gray-300 p-2">item 2</div>
-      </div>
-    </section>
-    
-    <!-- Display -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Display</h2>
-      <div class="flex gap-4 flex-wrap">
-        <div class="block bg-gray-300 p-2">block</div>
-        <div class="inline-block bg-gray-300 p-2">inline-block</div>
-        <div class="inline bg-gray-300 p-2">inline</div>
-        <div class="hidden">hidden</div>
-      </div>
-    </section>
-    
-    <!-- Position -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Position</h2>
-      <div class="relative h-20 bg-gray-200 mb-4">
-        <div class="absolute top-0 left-0 bg-blue p-2">absolute top-0 left-0</div>
-      </div>
-      <div class="flex gap-4">
-        <div class="static p-2 bg-gray-300">static</div>
-        <div class="relative p-2 bg-gray-300">relative</div>
-        <div class="fixed p-2 bg-gray-300">fixed</div>
-        <div class="sticky p-2 bg-gray-300">sticky</div>
-      </div>
-    </section>
-    
-    <!-- Shadows -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Shadows</h2>
-      <div class="flex gap-4 flex-wrap">
-        <div class="bg-white p-4 shadow-sm">shadow-sm</div>
-        <div class="bg-white p-4 shadow">shadow</div>
-        <div class="bg-white p-4 shadow-md">shadow-md</div>
-        <div class="bg-white p-4 shadow-lg">shadow-lg</div>
-        <div class="bg-white p-4 shadow-xl">shadow-xl</div>
-      </div>
-    </section>
-    
-    <!-- Width & Height -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Width & Height</h2>
-      <div class="flex gap-4 items-end mb-4">
-        <div class="bg-blue p-2 w-4">w-4</div>
-        <div class="bg-blue p-2 w-8">w-8</div>
-        <div class="bg-blue p-2 w-16">w-16</div>
-        <div class="bg-blue p-2 w-32">w-32</div>
-        <div class="bg-blue p-2 w-64">w-64</div>
-      </div>
-      <div class="flex gap-4">
-        <div class="bg-red p-2 h-4">h-4</div>
-        <div class="bg-red p-2 h-8">h-8</div>
-        <div class="bg-red p-2 h-16">h-16</div>
-        <div class="bg-red p-2 h-32">h-32</div>
-      </div>
-    </section>
-    
-    <!-- Text Alignment -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Text Alignment</h2>
-      <div class="flex gap-4 flex-wrap">
-        <div class="text-left bg-gray-200 p-2">text-left</div>
-        <div class="text-center bg-gray-200 p-2">text-center</div>
-        <div class="text-right bg-gray-200 p-2">text-right</div>
-      </div>
-    </section>
-    
-    <!-- Line Height -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Line Height</h2>
-      <div class="space-y-2">
-        <p class="leading-none">leading-none</p>
-        <p class="leading-tight">leading-tight</p>
-        <p class="leading-normal">leading-normal</p>
-        <p class="leading-relaxed">leading-relaxed</p>
-        <p class="leading-loose">leading-loose</p>
-      </div>
-    </section>
-    
-    <!-- Letter Spacing -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Letter Spacing</h2>
-      <div class="flex gap-4 flex-wrap">
-        <span class="tracking-tighter">tracking-tighter</span>
-        <span class="tracking-tight">tracking-tight</span>
-        <span class="tracking-normal">tracking-normal</span>
-        <span class="tracking-wide">tracking-wide</span>
-        <span class="tracking-wider">tracking-wider</span>
-        <span class="tracking-widest">tracking-widest</span>
-      </div>
-    </section>
-    
-    <!-- Opacity -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Opacity</h2>
-      <div class="flex gap-4 items-center">
-        <div class="bg-blue p-4 opacity-0">opacity-0</div>
-        <div class="bg-blue p-4 opacity-25">opacity-25</div>
-        <div class="bg-blue p-4 opacity-50">opacity-50</div>
-        <div class="bg-blue p-4 opacity-75">opacity-75</div>
-        <div class="bg-blue p-4 opacity-100">opacity-100</div>
-      </div>
-    </section>
-    
-    <!-- Z-Index -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Z-Index</h2>
-      <div class="flex gap-4">
-        <div class="z-0 bg-gray-300 p-2">z-0</div>
-        <div class="z-10 bg-gray-400 p-2">z-10</div>
-        <div class="z-20 bg-gray-500 p-2">z-20</div>
-        <div class="z-30 bg-gray-600 p-2">z-30</div>
-        <div class="z-40 bg-gray-700 p-2 text-white">z-40</div>
-        <div class="z-50 bg-gray-800 p-2 text-white">z-50</div>
-      </div>
-    </section>
-    
-    <!-- Overflow -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Overflow</h2>
-      <div class="flex gap-4">
-        <div class="overflow-auto w-32 h-16 bg-gray-200 p-2">overflow-auto</div>
-        <div class="overflow-hidden w-32 h-16 bg-gray-200 p-2">overflow-hidden</div>
-        <div class="overflow-visible w-32 h-16 bg-gray-200 p-2">overflow-visible</div>
-        <div class="overflow-scroll w-32 h-16 bg-gray-200 p-2">overflow-scroll</div>
-      </div>
-    </section>
-    
-    <!-- Cursor -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Cursor</h2>
-      <div class="flex gap-4">
-        <button class="cursor-pointer bg-blue text-white p-2 rounded">cursor-pointer</button>
-        <button class="cursor-default bg-gray-300 p-2 rounded">cursor-default</button>
-        <button class="cursor-not-allowed bg-gray-300 p-2 rounded" disabled>cursor-not-allowed</button>
-        <button class="cursor-move bg-gray-300 p-2 rounded">cursor-move</button>
-      </div>
-    </section>
-    
-    <!-- Visibility -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Visibility</h2>
-      <div class="flex gap-4">
-        <div class="visible bg-blue p-2">visible</div>
-        <div class="invisible bg-blue p-2">invisible</div>
-      </div>
-    </section>
-    
-    <!-- Whitespace -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Whitespace</h2>
-      <div class="flex gap-4 flex-wrap">
-        <div class="whitespace-nowrap bg-gray-200 p-2">whitespace-nowrap</div>
-        <div class="whitespace-pre bg-gray-200 p-2">whitespace-pre</div>
-        <div class="whitespace-pre-line bg-gray-200 p-2">whitespace-pre-line</div>
-        <div class="whitespace-pre-wrap bg-gray-200 p-2">whitespace-pre-wrap</div>
-      </div>
-    </section>
-    
-    <!-- Select -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">User Select</h2>
-      <div class="flex gap-4 flex-wrap">
-        <div class="select-none bg-gray-200 p-2">select-none</div>
-        <div class="select-text bg-gray-200 p-2">select-text</div>
-        <div class="select-all bg-gray-200 p-2">select-all</div>
-        <div class="select-auto bg-gray-200 p-2">select-auto</div>
-      </div>
-    </section>
-    
-    <!-- Border -->
-    <section class="mb-8">
-      <h2 class="text-xl font-semibold mb-4">Border</h2>
-      <div class="flex gap-4">
-        <div class="border bg-gray-200 p-4">border</div>
-        <div class="border-2 bg-gray-200 p-4">border-2</div>
-        <div class="border-4 bg-gray-200 p-4">border-4</div>
-        <div class="border-8 bg-gray-200 p-4">border-8</div>
-      </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="mt-16 py-8 text-center text-gray-600">
-      <p>Generated with miniwing CSS utility generator</p>
-    </footer>
+
+    <div class="grid">
+      <article class="card span-8">
+        <h2>What You Get</h2>
+        <div class="kpis">
+          <div class="kpi"><strong>0</strong>runtime JS required</div>
+          <div class="kpi"><strong>1</strong>config file (`miniwing.config.js`)</div>
+          <div class="kpi"><strong>2</strong>core inputs (`tokens.json` + HTML)</div>
+          <div class="kpi"><strong>1</strong>output (`dist/output.css`)</div>
+        </div>
+      </article>
+
+      <article class="card span-4">
+        <h3>Project Structure</h3>
+        <pre><code>miniwing/
+  packages/miniwing/
+    bin/cli.js
+    src/
+    tokens.json
+    miniwing.config.js
+    dist/output.css</code></pre>
+      </article>
+
+      <article class="card span-6">
+        <h3>Install</h3>
+        <pre><code>npm install @sazger/miniwing
+npx miniwing</code></pre>
+      </article>
+
+      <article class="card span-6">
+        <h3>Next Steps</h3>
+        <ul class="list">
+          <li>Follow <a href="/getting-started/">Getting Started</a> for first setup.</li>
+          <li>Read <a href="/core-concepts/">Core Concepts</a> to learn token mapping.</li>
+          <li>Use <a href="/examples/">Examples</a> for common patterns.</li>
+        </ul>
+      </article>
+    </div>
+
+    <footer class="footer">Miniwing docs on Netlify</footer>
   </div>
 </body>
 </html>

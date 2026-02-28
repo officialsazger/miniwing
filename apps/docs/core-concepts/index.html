@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Core Concepts | Miniwing Docs</title>
+  <meta name="description" content="Understand how miniwing scans classes and maps token values.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/miniwing.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <a class="brand" href="/"><span class="brand-badge">M</span>miniwing docs</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Overview</a>
+        <a href="/getting-started/">Getting Started</a>
+        <a href="/core-concepts/" class="active">Core Concepts</a>
+        <a href="/cli/">CLI</a>
+        <a href="/examples/">Examples</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Core Concepts</h1>
+      <p>Miniwing is built around token maps, class scanning, and deterministic CSS generation.</p>
+    </section>
+
+    <div class="grid">
+      <article class="card span-6">
+        <h2>Token Sources</h2>
+        <ul class="list">
+          <li>`tokens.json` is the baseline token dictionary.</li>
+          <li>`miniwing.config.js` can override or extend defaults.</li>
+          <li>The merged result powers utility value lookups.</li>
+        </ul>
+      </article>
+
+      <article class="card span-6">
+        <h2>Class Scanning</h2>
+        <ul class="list">
+          <li>HTML class attributes are parsed.</li>
+          <li>Known utility patterns are validated.</li>
+          <li>Only discovered classes are emitted as CSS.</li>
+        </ul>
+      </article>
+
+      <article class="card span-12">
+        <h2>Token Override Example</h2>
+        <pre><code>// miniwing.config.js
+module.exports = {
+  tokens: {
+    colors: {
+      brand: "#0369a1"
+    },
+    spacing: {
+      18: "4.5rem"
+    }
+  }
+};</code></pre>
+      </article>
+
+      <article class="card span-12">
+        <h2>Why this model?</h2>
+        <p>It keeps CSS predictable and compact while letting you enforce design values from a single source of truth.</p>
+      </article>
+    </div>
+
+    <footer class="footer">Miniwing docs on Netlify</footer>
+  </div>
+</body>
+</html>
