@@ -24,16 +24,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sager93134-droid/miniwing.git",
+    "url": "git+https://github.com/officialsazger/miniwing.git",
     "directory": "packages/miniwing"
   },
   "bugs": {
-    "url": "https://github.com/sager93134-droid/miniwing/issues"
+    "url": "https://github.com/officialsazger/miniwing/issues"
   },
-  "homepage": "https://github.com/sager93134-droid/miniwing#readme",
+  "homepage": "https://github.com/officialsazger/miniwing#readme",
   "funding": {
     "type": "github",
-    "url": "https://github.com/sponsors/sager93134-droid"
+    "url": "https://github.com/sponsors/officialsazger"
   },
   "publishConfig": {
     "access": "public",

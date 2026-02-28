@@ -9,17 +9,17 @@
     "generator",
     "miniwing"
   ],
-  "homepage": "https://github.com/sager93134-droid/miniwind#readme",
+  "homepage": "https://github.com/officialsazger/miniwing#readme",
   "bugs": {
-    "url": "https://github.com/sager93134-droid/miniwind/issues"
+    "url": "https://github.com/officialsazger/miniwing/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sager93134-droid/miniwind.git"
+    "url": "git+https://github.com/officialsazger/miniwing.git"
   },
   "funding": {
     "type": "github",
-    "url": "https://github.com/sponsors/sager93134-droid"
+    "url": "https://github.com/sponsors/officialsazger"
   },
   "license": "MIT",
   "author": "",
