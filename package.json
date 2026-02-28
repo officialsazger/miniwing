@@ -1,8 +1,30 @@
 {
   "name": "miniwing",
   "version": "1.0.0",
-  "description": "A lightweight CSS utility generator that scans HTML files for class names",
   "private": true,
+  "description": "A lightweight CSS utility generator that scans HTML files for class names",
+  "keywords": [
+    "css",
+    "utility",
+    "generator",
+    "miniwing"
+  ],
+  "homepage": "https://github.com/sager93134-droid/miniwind#readme",
+  "bugs": {
+    "url": "https://github.com/sager93134-droid/miniwind/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sager93134-droid/miniwind.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sager93134-droid"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
   "workspaces": [
     "packages/*",
     "apps/*"
@@ -13,21 +35,15 @@
     "test": "npm run build",
     "ci": "npm run build && npm pack --workspace packages/miniwing --dry-run"
   },
-  "keywords": ["css", "utility", "generator", "miniwing"],
-  "author": "",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sager93134-droid/miniwind.git"
+  "dependencies": {
+    "fs-extra": "^11.3.3",
+    "graceful-fs": "^4.2.11",
+    "jsonfile": "^6.2.0",
+    "miniwing": "^1.0.0",
+    "miniwing-docs": "^1.0.0",
+    "universalify": "^2.0.1"
   },
-  "bugs": {
-    "url": "https://github.com/sager93134-droid/miniwind/issues"
-  },
-  "homepage": "https://github.com/sager93134-droid/miniwind#readme",
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/sager93134-droid"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=18"
   }
