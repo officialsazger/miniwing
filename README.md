@@ -1,95 +1,76 @@
-# Miniwing
+# miniwing
 
-A lightweight CSS utility generator that scans HTML files for class names and generates corresponding CSS utilities.
+A lightweight, token-driven CSS utility framework generator.
 
-## Features
+[![CI](https://github.com/sager93134-droid/miniwind/actions/workflows/ci.yml/badge.svg)](https://github.com/sager93134-droid/miniwind/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/miniwing.svg)](https://www.npmjs.com/package/miniwing)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-- **Automatic Class Detection**: Scans HTML files for class names
-- **Utility CSS Generation**: Generates CSS utilities for:
-  - Background colors (bg-blue, bg-red, etc.)
-  - Text colors (text-white, text-black, etc.)
-  - Spacing (p-1, p-2, m-1, m-2, etc.)
-  - Typography (font sizes, weights, line height)
-  - Flexbox utilities
-  - Grid utilities
-  - And more!
+## Why miniwing
 
-## Installation
+- Scans HTML and extracts utility classes automatically
+- Generates CSS from design tokens
+- Supports token overrides via `miniwing.config.js`
+- Ships as an npm CLI package
+- Includes docs deployment via Netlify
 
-```
-bash
+## Quick Start
+
+```bash
 npm install
-```
-
-## Usage
-
-Run the build command to scan HTML files and generate CSS:
-
-```
-bash
 npm run build
 ```
 
-Or use npx:
+Or run directly:
 
-```
-bash
+```bash
 npx miniwing
 ```
 
-This will:
-1. Scan HTML files in `apps/docs/` and `playground/`
-2. Extract all class names
-3. Generate corresponding CSS utilities
-4. Output to `packages/miniwing/dist/output.css`
-5. Copy to `apps/docs/style.css`
-
-## CLI Output
-
-When you run the build, you should see:
-```
-Starting miniwing build...
-Found X unique class names
-CSS compiled to: packages/miniwing/dist/output.css
-CSS copied to: apps/docs/style.css
-miniwing build complete
-```
+Build output:
+- Generated CSS: `packages/miniwing/dist/output.css`
+- Docs CSS: `apps/docs/style.css`
 
 ## Configuration
 
-Edit `packages/miniwing/miniwing.config.js` to customize:
-- Colors
-- Spacing values
-- Output path
-- Which utilities to generate
+Customize token behavior in:
+- `packages/miniwing/miniwing.config.js`
+- `packages/miniwing/tokens.json`
 
-## Netlify Deployment
+## Repository Layout
 
-This repo is configured for Netlify via `netlify.toml`:
+```text
+miniwing/
+  packages/miniwing/      # npm package (CLI + generator core)
+  apps/docs/              # static docs site
+  playground/             # local playground
+  .github/workflows/      # CI + release automation
+  netlify.toml            # Netlify deployment config
+```
+
+## Release and Publishing
+
+- npm publish is automated via GitHub Actions on Release publish
+- GitHub Packages publish is handled in a dedicated workflow
+- GitHub Releases are used as the canonical release event
+
+Required repository secrets:
+- `NPM_TOKEN` for npm publish workflow
+
+## Deployment
+
+Netlify is configured through `netlify.toml`:
 - Build command: `npm run build`
 - Publish directory: `apps/docs`
 
-## Project Structure
+## Contributing
 
-```
-miniwing/
-├── packages/
-│   └── miniwing/           # Main package
-│       ├── bin/
-│       │   └── cli.js      # CLI entry point
-│       ├── src/
-│       │   ├── index.js    # Main module
-│       │   ├── scanner.js  # HTML scanner
-│       │   └── generator.js # CSS generator
-│       └── dist/
-│           └── output.css  # Generated CSS
-├── apps/
-│   └── docs/               # Documentation site
-│       ├── index.html
-│       └── style.css
-└── playground/             # Playground for testing
-```
+See [CONTRIBUTING.md](./CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md).
+
+## Security
+
+See [SECURITY.md](./SECURITY.md).
 
 ## License
 
-MIT
+MIT. See [LICENSE](./LICENSE).

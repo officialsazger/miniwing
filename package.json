@@ -10,7 +10,8 @@
   "scripts": {
     "build": "node packages/miniwing/bin/cli.js",
     "dev": "echo 'Run npm install first, then npm run build'",
-    "test": "echo 'No tests configured'"
+    "test": "npm run build",
+    "ci": "npm run build && npm pack --workspace packages/miniwing --dry-run"
   },
   "keywords": ["css", "utility", "generator", "miniwing"],
   "author": "",
@@ -26,5 +27,8 @@
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/sager93134-droid"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

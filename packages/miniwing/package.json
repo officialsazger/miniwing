@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A lightweight CSS utility generator with design token system",
   "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
   "bin": {
     "miniwing": "./bin/cli.js"
   },
@@ -39,5 +42,8 @@
   ],
   "dependencies": {
     "fs-extra": "^11.1.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
