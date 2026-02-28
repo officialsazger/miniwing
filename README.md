@@ -2,8 +2,8 @@
 
 A lightweight, token-driven CSS utility framework generator.
 
-[![CI](https://github.com/sager93134-droid/miniwind/actions/workflows/ci.yml/badge.svg)](https://github.com/sager93134-droid/miniwind/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/miniwing.svg)](https://www.npmjs.com/package/miniwing)
+[![CI](https://github.com/sager93134-droid/miniwind/actions/workflows/ci.yml/badge.svg)](https://github.com/officialsazger/miniwind/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/miniwing.svg)]([https://www.npmjs.com/package/miniwing](https://www.npmjs.com/package/@sazger/miniwing))
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 ## Why miniwing
