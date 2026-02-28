@@ -13,6 +13,30 @@
   "keywords": ["css", "utility", "generator", "tokens", "miniwing"],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sager93134-droid/miniwind.git",
+    "directory": "packages/miniwing"
+  },
+  "bugs": {
+    "url": "https://github.com/sager93134-droid/miniwind/issues"
+  },
+  "homepage": "https://github.com/sager93134-droid/miniwind#readme",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sager93134-droid"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "files": [
+    "bin",
+    "src",
+    "dist",
+    "tokens.json",
+    "miniwing.config.js"
+  ],
   "dependencies": {
     "fs-extra": "^11.1.0"
   }
