@@ -2,7 +2,7 @@
   "name": "miniwing",
   "version": "1.0.0",
   "description": "A lightweight CSS utility generator that scans HTML files for class names",
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/*",
     "apps/*"

@@ -19,12 +19,16 @@ function main() {
   console.log('Starting miniwing build...');
   
   // Define the HTML files to scan
+  // From: miniwind/packages/miniwing/bin/cli.js
+  // To: miniwind/apps/docs/index.html (need to go up 3 levels)
   const htmlFiles = [
-    path.join(__dirname, '../../apps/docs/index.html'),
-    path.join(__dirname, '../../playground/index.html')
+    path.join(__dirname, '../../../apps/docs/index.html'),
+    path.join(__dirname, '../../../playground/index.html')
   ];
   
   // Define output path for compiled CSS
+  // From: miniwind/packages/miniwing/bin/cli.js
+  // To: miniwind/packages/miniwing/dist/ (need to go up 1 level)
   const outputDir = path.join(__dirname, '../dist');
   const outputPath = path.join(outputDir, 'output.css');
   
@@ -47,7 +51,9 @@ function main() {
   console.log(`CSS compiled to: ${outputPath}`);
   
   // Copy to apps/docs/style.css
-  const docsStylePath = path.join(__dirname, '../../apps/docs/style.css');
+  // From: miniwind/packages/miniwing/bin/cli.js
+  // To: miniwind/apps/docs/style.css (need to go up 3 levels)
+  const docsStylePath = path.join(__dirname, '../../../apps/docs/style.css');
   fs.writeFileSync(docsStylePath, css, 'utf8');
   
   console.log(`CSS copied to: ${docsStylePath}`);

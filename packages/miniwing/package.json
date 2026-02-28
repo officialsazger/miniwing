@@ -1,0 +1,19 @@
+{
+  "name": "miniwing",
+  "version": "1.0.0",
+  "description": "A lightweight CSS utility generator with design token system",
+  "main": "src/index.js",
+  "bin": {
+    "miniwing": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "node bin/cli.js",
+    "dev": "node bin/cli.js"
+  },
+  "keywords": ["css", "utility", "generator", "tokens", "miniwing"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.1.0"
+  }
+}
