@@ -1,0 +1,18 @@
+{
+  "name": "miniwing",
+  "version": "1.0.0",
+  "description": "A lightweight CSS utility generator that scans HTML files for class names",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "node packages/miniwing/bin/cli.js",
+    "dev": "echo 'Run npm install first, then npm run build'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": ["css", "utility", "generator", "miniwing"],
+  "author": "",
+  "license": "MIT"
+}

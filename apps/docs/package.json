@@ -1,0 +1,13 @@
+{
+  "name": "miniwing-docs",
+  "version": "1.0.0",
+  "description": "Documentation site for miniwing CSS utility generator",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Open index.html in browser'",
+    "start": "echo 'Open index.html in browser'"
+  },
+  "keywords": ["miniwing", "docs"],
+  "author": "",
+  "license": "MIT"
+}

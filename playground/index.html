@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miniwing Playground</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .preview {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .preview-item {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+    }
+    h1 { margin-bottom: 1rem; }
+    .section { margin-bottom: 2rem; }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <h1 class="text-4xl font-bold text-center mb-8">Miniwing Playground</h1>
+  
+  <div class="section">
+    <h2 class="text-2xl font-semibold mb-4">Background Colors</h2>
+    <div class="preview">
+      <div class="preview-item bg-blue text-white">bg-blue</div>
+      <div class="preview-item bg-red text-white">bg-red</div>
+      <div class="preview-item bg-green text-white">bg-green</div>
+      <div class="preview-item bg-yellow">bg-yellow</div>
+      <div class="preview-item bg-purple text-white">bg-purple</div>
+      <div class="preview-item bg-pink text-white">bg-pink</div>
+      <div class="preview-item bg-indigo text-white">bg-indigo</div>
+      <div class="preview-item bg-cyan text-white">bg-cyan</div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="text-2xl font-semibold mb-4">Padding</h2>
+    <div class="preview">
+      <div class="preview-item bg-gray-300 p-1">p-1</div>
+      <div class="preview-item bg-gray-300 p-2">p-2</div>
+      <div class="preview-item bg-gray-300 p-4">p-4</div>
+      <div class="preview-item bg-gray-300 p-6">p-6</div>
+      <div class="preview-item bg-gray-300 p-8">p-8</div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="text-2xl font-semibold mb-4">Margin</h2>
+    <div class="preview">
+      <div class="preview-item bg-gray-300 m-1 p-2">m-1</div>
+      <div class="preview-item bg-gray-300 m-2 p-2">m-2</div>
+      <div class="preview-item bg-gray-300 m-4 p-2">m-4</div>
+      <div class="preview-item bg-gray-300 m-6 p-2">m-6</div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="text-2xl font-semibold mb-4">Border Radius</h2>
+    <div class="preview">
+      <div class="preview-item bg-blue text-white rounded-sm">rounded-sm</div>
+      <div class="preview-item bg-blue text-white rounded">rounded</div>
+      <div class="preview-item bg-blue text-white rounded-md">rounded-md</div>
+      <div class="preview-item bg-blue text-white rounded-lg">rounded-lg</div>
+      <div class="preview-item bg-blue text-white rounded-full">rounded-full</div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="text-2xl font-semibold mb-4">Text Colors</h2>
+    <div class="preview">
+      <div class="preview-item bg-white text-blue">text-blue</div>
+      <div class="preview-item bg-white text-red">text-red</div>
+      <div class="preview-item bg-black text-white">text-white</div>
+      <div class="preview-item bg-white text-green">text-green</div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="text-2xl font-semibold mb-4">Typography</h2>
+    <div class="preview flex-col items-start">
+      <p class="text-xs">text-xs - Extra small</p>
+      <p class="text-sm">text-sm - Small</p>
+      <p class="text-base">text-base - Base</p>
+      <p class="text-lg">text-lg - Large</p>
+      <p class="text-xl">text-xl - Extra large</p>
+      <p class="text-2xl font-bold">text-2xl - 2X Large</p>
+      <p class="text-3xl font-bold">text-3xl - 3X Large</p>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="text-2xl font-semibold mb-4">Flexbox</h2>
+    <div class="flex gap-4 mb-4">
+      <div class="bg-gray-300 p-2">flex</div>
+      <div class="bg-gray-300 p-2">row</div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="bg-gray-300 p-2">flex</div>
+      <div class="bg-gray-300 p-2">col</div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="text-2xl font-semibold mb-4">Display</h2>
+    <div class="flex gap-4">
+      <div class="block bg-gray-300 p-2">block</div>
+      <div class="inline-block bg-gray-300 p-2">inline-block</div>
+      <div class="inline bg-gray-300 p-2">inline</div>
+      <div class="hidden">hidden</div>
+    </div>
+  </div>
+  
+  <footer class="text-center mt-16 text-gray-600">
+    <p>Generated with miniwing</p>
+  </footer>
+</body>
+</html>
