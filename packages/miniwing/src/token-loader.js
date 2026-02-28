@@ -53,15 +53,8 @@ function loadTokens(tokensPath = DEFAULT_TOKENS_PATH) {
 function loadConfig(configPath = DEFAULT_CONFIG_PATH) {
   try {
     const resolvedPath = path.resolve(configPath);
-    const legacyPath = path.join(path.dirname(resolvedPath), 'miniwind.config.js');
     
     if (!fs.existsSync(resolvedPath)) {
-      // Backward compatibility with older config naming.
-      if (fs.existsSync(legacyPath)) {
-        const legacyConfig = require(path.resolve(legacyPath));
-        console.log(`Loaded legacy config from: ${legacyPath}`);
-        return legacyConfig;
-      }
       console.log(`No config file found at ${resolvedPath}, using defaults`);
       return {};
     }

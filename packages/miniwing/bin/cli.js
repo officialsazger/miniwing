@@ -21,8 +21,8 @@ function main() {
   console.log('Starting miniwing build...');
   console.log('='.repeat(40));
   
-  // Get the root directory (2 levels up from bin/cli.js)
-  const rootDir = path.resolve(__dirname, '../..');
+  // Get the monorepo root directory (3 levels up from packages/miniwing/bin/cli.js)
+  const rootDir = path.resolve(__dirname, '../../..');
   
   // Define paths
   const tokensPath = path.join(__dirname, '../tokens.json');
